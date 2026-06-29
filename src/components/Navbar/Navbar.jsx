@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import styles from './Navbar.module.css';
+import logo from '../../assets/logo.png';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -37,7 +38,7 @@ const Navbar = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <a href="#home" className={styles.logo} onClick={() => scrollToSection('#home')}>
-          <img src="/logo.png" alt="Southern Eatery" />
+          <img src={logo} alt="Southern Eatery" />
           <span>Southern Eatery</span>
         </a>
 

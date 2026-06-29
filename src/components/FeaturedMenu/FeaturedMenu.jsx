@@ -4,6 +4,16 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { FaUtensils, FaDrumstickBite, FaFish, FaTag } from 'react-icons/fa';
 import styles from './FeaturedMenu.module.css';
 
+// Import menu images
+import unnamed from '../../assets/unnamed.jpg';
+import unnamed2 from '../../assets/unnamed-2.jpg';
+import unnamed3 from '../../assets/unnamed-3.jpg';
+import unnamed4 from '../../assets/unnamed-4.jpg';
+import unnamed6 from '../../assets/unnamed-6.jpg';
+import unnamed7 from '../../assets/unnamed-7.jpg';
+import unnamed8 from '../../assets/unnamed-8.jpg';
+import unnamed9 from '../../assets/unnamed-9.jpg';
+
 const categories = [
   { id: 'meat', name: 'Meat Specialties', icon: FaDrumstickBite },
   { id: 'seafood', name: 'Seafood Specials', icon: FaFish },
@@ -17,37 +27,37 @@ const menuItems = {
       name: 'Beef Fry',
       description: 'Traditional Kerala style slow-roasted beef with coconut bites and aromatic spices',
       price: '$12.99',
-      image: '/unnamed-4.jpg'
+      image: unnamed4
     },
     {
       name: 'Beef Roast',
       description: 'Spiced beef cubes slow-cooked in a rich onion-tomato gravy with curry leaves',
       price: '$12.99',
-      image: '/unnamed.jpg'
+      image: unnamed
     },
     {
       name: 'Mutton Roast',
       description: 'Tender mutton cooked in freshly ground spices, roasted with coconut oil',
       price: '$15.99',
-      image: '/unnamed-2.jpg'
+      image: unnamed2
     },
     {
       name: 'Chicken 65',
       description: 'Crispy, deep-fried chicken chunks marinated with ginger, garlic, and red chilies',
       price: '$9.99',
-      image: '/unnamed-3.jpg'
+      image: unnamed3
     },
     {
       name: 'Chicken Curry',
       description: 'Traditional Kerala chicken curry simmered in a coconut milk-based gravy',
       price: '$11.99',
-      image: '/unnamed-6.jpg'
+      image: unnamed6
     },
     {
       name: 'Chicken Roast',
       description: 'Chicken pieces slow-roasted in a semi-dry gravy of onions, tomatoes, and spices',
       price: '$12.99',
-      image: '/unnamed-7.jpg'
+      image: unnamed7
     }
   ],
   seafood: [
@@ -55,25 +65,25 @@ const menuItems = {
       name: 'Meen Curry Mulakittath',
       description: 'Fiery red Kerala fish curry cooked with camboge (kudampuli) and hot spices',
       price: '$14.99',
-      image: '/unnamed-8.jpg'
+      image: unnamed8
     },
     {
       name: 'Sardine Fry',
       description: 'Fresh sardines marinated in traditional spices and shallow fried to crispy perfection',
       price: '$8.99',
-      image: '/unnamed-9.jpg'
+      image: unnamed9
     },
     {
       name: 'Mackerel Fry',
       description: 'Mackerel fish coated in a spicy red chili paste and pan-fried',
       price: '$9.99',
-      image: '/unnamed.jpg'
+      image: unnamed
     },
     {
       name: 'Anchovy Fry',
       description: 'Crispy fried small anchovies marinated in a spicy Kerala spice mix',
       price: '$8.99',
-      image: '/unnamed-2.jpg'
+      image: unnamed2
     }
   ],
   meals: [
@@ -81,7 +91,7 @@ const menuItems = {
       name: 'Fish Curry Meals',
       description: 'Traditional Kerala feast served with red rice, fish curry, side dishes, pickle, and pappadam',
       price: '$13.99',
-      image: '/unnamed-4.jpg'
+      image: unnamed4
     }
   ],
   promos: [
@@ -89,19 +99,19 @@ const menuItems = {
       name: 'Beef Roast (Promo)',
       description: 'Special promotional offer: Spiced beef cubes slow-cooked in a rich onion-tomato gravy',
       price: '$4.99',
-      image: '/unnamed.jpg'
+      image: unnamed
     },
     {
       name: 'Butter Chicken (Promo)',
       description: 'Special promotional offer: Creamy tomato gravy with tender grilled chicken pieces',
       price: '$4.99',
-      image: '/unnamed-3.jpg'
+      image: unnamed3
     },
     {
       name: 'Mutton Roast (Promo)',
       description: 'Special promotional offer: Succulent mutton roasted in a rich spice blend',
       price: '$6.99',
-      image: '/unnamed-2.jpg'
+      image: unnamed2
     }
   ]
 };

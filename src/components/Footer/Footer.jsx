@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebook, FaTwitter, FaArrowUp } from 'react-icons/fa';
 import styles from './Footer.module.css';
+import logo from '../../assets/logo.png';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -12,7 +13,7 @@ const Footer = () => {
         <div className={styles.topSection}>
           <div className={styles.brand}>
             <div className={styles.logo}>
-              <img src="/logo.png" alt="Southern Eatery" />
+              <img src={logo} alt="Southern Eatery" />
               <div className={styles.logoText}>
                 <h3>Southern Eatery</h3>
                 <p>Fine Dining Experience</p>

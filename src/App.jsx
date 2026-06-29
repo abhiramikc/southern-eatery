@@ -13,6 +13,7 @@ import Catering from './components/Catering/Catering';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import styles from './App.module.css';
+import logo from './assets/logo.png';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +37,7 @@ function App() {
           >
             <div className={styles.loaderContent}>
               <div className={styles.logoRing}>
-                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Southern Eatery" />
+                <img src={logo} alt="Southern Eatery" />
               </div>
               <div className={styles.spinner}>
                 <div className={styles.ring} />
