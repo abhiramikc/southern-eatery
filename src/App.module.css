@@ -1,0 +1,90 @@
+.app {
+  min-height: 100vh;
+  background: var(--color-bg-dark);
+  overflow-x: hidden;
+}
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg-dark);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loaderContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoRing {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(201, 162, 39, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.logoRing::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--color-primary);
+  animation: spin 1.5s linear infinite;
+}
+
+.logoRing img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.spinner {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+.ring:nth-child(2) {
+  inset: 6px;
+  animation-duration: 1.2s;
+  border-top-color: var(--color-accent-bronze);
+}
+
+.ring:nth-child(3) {
+  inset: 12px;
+  animation-duration: 0.9s;
+  border-top-color: var(--color-primary-light);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loaderContent p {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

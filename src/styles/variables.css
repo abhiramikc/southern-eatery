@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #C9A227;
+  --color-primary-dark: #8B6914;
+  --color-primary-light: #F4E4BC;
+  --color-primary-glow: rgba(201, 162, 39, 0.3);
+
+  --color-bg-dark: #0A0A0A;
+  --color-bg-charcoal: #1A1A1A;
+  --color-bg-card: #2D2D2D;
+  --color-bg-light: #FAF8F3;
+  --color-bg-cream: #F5F0E6;
+
+  --color-text-primary: #F5F0E6;
+  --color-text-secondary: #A89F91;
+  --color-text-muted: #6B6560;
+  --color-text-dark: #1A1A1A;
+
+  --color-accent-bronze: #B87333;
+  --color-accent-warm: #D4A574;
+
+  --gradient-gold: linear-gradient(135deg, #C9A227 0%, #8B6914 100%);
+  --gradient-dark: linear-gradient(180deg, #0A0A0A 0%, #1A1A1A 100%);
+  --gradient-overlay: linear-gradient(180deg, rgba(10,10,10,0.6) 0%, rgba(10,10,10,0.95) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(45,45,45,0.9) 0%, rgba(26,26,26,0.95) 100%);
+
+  --shadow-gold: 0 0 30px rgba(201, 162, 39, 0.2);
+  --shadow-card: 0 10px 40px rgba(0,0,0,0.4);
+  --shadow-hover: 0 20px 60px rgba(0,0,0,0.5);
+  --shadow-subtle: 0 4px 20px rgba(0,0,0,0.15);
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-xxl: 8rem;
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+}
