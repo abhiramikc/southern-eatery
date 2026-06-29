@@ -5,15 +5,15 @@ import { FaExpand } from 'react-icons/fa';
 import styles from './Gallery.module.css';
 
 const galleryImages = [
-  { src: '/unnamed.jpg', category: 'Interior', span: 'tall' },
-  { src: '/unnamed-2.jpg', category: 'Dining', span: 'normal' },
-  { src: '/unnamed-3.jpg', category: 'Interior', span: 'normal' },
-  { src: '/unnamed-4.jpg', category: 'Food', span: 'wide' },
-  { src: '/unnamed-5.jpg', category: 'Chef', span: 'normal' },
-  { src: '/unnamed-6.jpg', category: 'Dining', span: 'tall' },
-  { src: '/unnamed-7.jpg', category: 'Food', span: 'normal' },
-  { src: '/unnamed-8.jpg', category: 'Food', span: 'normal' },
-  { src: '/unnamed-9.jpg', category: 'Interior', span: 'wide' },
+  { src: `${import.meta.env.BASE_URL}unnamed.jpg`, category: 'Interior', span: 'tall' },
+  { src: `${import.meta.env.BASE_URL}unnamed-2.jpg`, category: 'Dining', span: 'normal' },
+  { src: `${import.meta.env.BASE_URL}unnamed-3.jpg`, category: 'Interior', span: 'normal' },
+  { src: `${import.meta.env.BASE_URL}unnamed-4.jpg`, category: 'Food', span: 'wide' },
+  { src: `${import.meta.env.BASE_URL}unnamed-5.jpg`, category: 'Chef', span: 'normal' },
+  { src: `${import.meta.env.BASE_URL}unnamed-6.jpg`, category: 'Dining', span: 'tall' },
+  { src: `${import.meta.env.BASE_URL}unnamed-7.jpg`, category: 'Food', span: 'normal' },
+  { src: `${import.meta.env.BASE_URL}unnamed-8.jpg`, category: 'Food', span: 'normal' },
+  { src: `${import.meta.env.BASE_URL}unnamed-9.jpg`, category: 'Interior', span: 'wide' },
 ];
 
 const Gallery = () => {

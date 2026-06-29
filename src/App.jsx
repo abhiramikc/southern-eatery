@@ -36,7 +36,7 @@ function App() {
           >
             <div className={styles.loaderContent}>
               <div className={styles.logoRing}>
-                <img src="/logo.png" alt="Southern Eatery" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Southern Eatery" />
               </div>
               <div className={styles.spinner}>
                 <div className={styles.ring} />
