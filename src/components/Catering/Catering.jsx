@@ -35,7 +35,18 @@ const Catering = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate API submission
+
+    const subject = encodeURIComponent(`New Catering Inquiry - ${formData.eventType}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Phone: ${formData.phone}\n` +
+      `Event Type: ${formData.eventType}\n` +
+      `Number of Guests: ${formData.guests}\n` +
+      `Notes: ${formData.notes}`
+    );
+
+    window.location.href = `mailto:kcabhirami@gmail.com?subject=${subject}&body=${body}`;
+
     setFormSubmitted(true);
   };
 

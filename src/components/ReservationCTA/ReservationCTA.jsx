@@ -9,9 +9,9 @@ const ReservationCTA = () => {
   return (
     <section id="reservation" className={styles.section}>
       <div className={styles.background}>
-        <img 
-          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1920&q=80" 
-          alt="Restaurant ambiance" 
+        <img
+          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1920&q=80"
+          alt="Restaurant ambiance"
         />
         <div className={styles.overlay} />
       </div>
@@ -29,10 +29,10 @@ const ReservationCTA = () => {
             <span>Reservations</span>
             <span className={styles.line} />
           </div>
+          <h2 className={styles.title}>Coming Soon..</h2>
+          {/* <h2 className={styles.title}>Reserve Your <span>Table Today</span></h2> */}
 
-          <h2 className={styles.title}>Reserve Your <span>Table Today</span></h2>
-
-          <p className={styles.description}>
+          {/* <p className={styles.description}>
             Whether it's an intimate dinner for two or a celebration with friends, 
             let us create an unforgettable experience for you. Our team is ready to 
             make your evening truly special.
@@ -59,10 +59,10 @@ const ReservationCTA = () => {
           }}>
             <FaCalendarAlt />
             <span>Book Now</span>
-          </a>
+          </a> */}
         </div>
       </motion.div>
-    </section>
+    </section >
   );
 };
 
